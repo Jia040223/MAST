@@ -53,7 +53,19 @@ The spectrum-structure reward follows the training recipe of [AzureLeon1/MolSpec
 
 ## Checkpoints
 
-Set checkpoint paths through environment variables instead of editing source files:
+The pretrained checkpoints are publicly available on [Hugging Face](https://huggingface.co/Serendipity001/MAST).
+
+The following files are required for inference:
+
+| Checkpoint | Description |
+|---|---|
+| `motif_predictor/best_model.pth` | Motif predictor used by the denoising model and the motif-consistency reward. |
+| `motif_predictor/substructure_labels.json` | Motif vocabulary required by `best_model.pth`. |
+| `mast/qm9sp/checkpoint_80.pth` | MAST checkpoint used for both standard diffusion sampling and MCTS-guided inference. |
+| `reward/qm9sp-con_recon-specformer-logx_norm-v3.ckpt` | MolSpectra-style spectral reward model used during MCTS. |
+
+
+You can set checkpoint paths through environment variables instead of editing source files:
 
 ```bash
 export MAST_SPECFORMER_CKPT=/path/to/specformer_pretrain.pth
