@@ -1,6 +1,6 @@
-# MAST
+# [ICML 2026] MAST: Motif-Augmented Diffusion with Search Tree for Spectroscopic Molecular Structure Elucidation
 
-Official release code for **MAST: Motif-Augmented Diffusion with Search Tree for Spectroscopic Molecular Structure Elucidation**.
+Official release code for **MAST: Motif-Augmented Diffusion with Search Tree for Spectroscopic Molecular Structure Elucidation**, accepted to ICML 2026.
 
 ![Overview](assert/Overview.png)
 
